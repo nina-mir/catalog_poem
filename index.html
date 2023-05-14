@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog, a poem by todd dillard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <div>
+            <h3>a matching game inspired by todd dillard's poem,<em> catalog</em>, posted on
+                <a href="https://twitter.com/toddedillard/status/1653066424062025728">
+                    twitter</a>
+            </h3>
+            <p> drag an item on the left to its matching catalog's definitions, on the right</p>
+            <em>note:</em>
+            <p> the words on the left are in the exact order as in the poem</p>
+            <b>the items on the right are shuffled randomly!</b>
+            <p>if two items are matched correctly, they'll disappear to have some privacy</p>
+        </div>
+        <div id="endMessage">
+            <img alt="The image of the poem as posted by Todd on Twitter" src="poem.png">
+            </imag>
+            <h3> Well done!</h3>
+            <button onclick="playAgain()">Play Again!</button>
+        </div>
+        <div>
+            <!-- left column -->
+            <ul id="left" class="draggable-list">
+
+            </ul>
+        </div>
+        <div>
+            <!-- right column -->
+            <ul id="right" class="draggable-list">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
